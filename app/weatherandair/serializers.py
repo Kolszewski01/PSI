@@ -4,11 +4,11 @@ from .models import Weather, AirQuality
 class WeatherSerializer(serializers.ModelSerializer):
     class Meta:
         model = Weather
-        fields = ['city', 'temperature', 'humidity', 'precipitation']
-
-
+        fields = ['id', 'city', 'temperature', 'humidity', 'precipitation', 'date']
+        read_only_fields = ['id', 'date']
 
 class AirQualitySerializer(serializers.ModelSerializer):
     class Meta:
         model = AirQuality
-        fields = '__all__'
+        fields = ['id', 'weather', 'quality', 'date']
+        read_only_fields = ['id', 'date']

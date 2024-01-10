@@ -3,9 +3,8 @@ from rest_framework.routers import DefaultRouter
 from .views import WeatherViewSet, AirQualityViewSet
 
 router = DefaultRouter()
-router.register(r'Weather', WeatherViewSet)
-router.register(r'Air_Quality', AirQualityViewSet)
-
+router.register(r'weather', WeatherViewSet)
+router.register(r'airquality', AirQualityViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

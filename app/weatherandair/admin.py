@@ -3,4 +3,3 @@ from .models import Weather, AirQuality
 
 admin.site.register(Weather)
 admin.site.register(AirQuality)
-

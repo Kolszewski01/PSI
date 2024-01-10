@@ -43,8 +43,8 @@ INSTALLED_APPS = [
     'drf_yasg',
     'core',
     'news',
+    'weatherandair',
     'finance',
-    'weather',
     'user',
 
 ]

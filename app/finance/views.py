@@ -4,7 +4,6 @@ from .models import Currency, Cryptocurrency, Commodity, Stock, Inflation
 from .serializers import CurrencySerializer, CryptocurrencySerializer, CommoditySerializer, StockSerializer, InflationSerializer
 
 
-
 class IsAdminOrReadOnly(permissions.BasePermission):
 
     def has_permission(self, request, view):
