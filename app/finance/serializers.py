@@ -5,7 +5,7 @@ class CurrencySerializer(serializers.ModelSerializer):
     class Meta:
         model = Currency
         fields = '__all__'
-        read_only_fields = ['datetime','id']  # Ustawienie 'datetime' jako tylko do odczytu
+        read_only_fields = ['datetime','id']
 
 class CryptocurrencySerializer(serializers.ModelSerializer):
     class Meta:

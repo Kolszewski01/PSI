@@ -15,7 +15,6 @@ class CommentSerializer(serializers.ModelSerializer):
         read_only_fields = ['id', 'user', 'datetime']
 
     def to_representation(self, instance):
-        """Dynamically adjust the representation based on user type."""
         representation = super().to_representation(instance)
         if not self.context['request'].user.is_staff:
             representation.pop('user', None)
